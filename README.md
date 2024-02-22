@@ -11,6 +11,7 @@ Plateau is a rectangle or square shape
 3. mars-rover.dt.ts - application model
 4. test.ts - rover creation and instruction execution tested
 5. index.ts - application entry
+6. mars-rover.dt.ts - application data model
 
 Functionalities
 
