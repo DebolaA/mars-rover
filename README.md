@@ -2,7 +2,7 @@
 
 Mars Rover Tech Task
 
-Mars Rover implemented using the below files - (each file can be assumed to be a domain)
+Mars Rover implemented using the below files - (each file can be assummed to be a domain)
 
 Plateau is a rectangle or square shape
 

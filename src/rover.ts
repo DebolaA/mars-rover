@@ -8,11 +8,11 @@ export function addRover(
     surface: Plateau,
     position: string,
 ): Rover {
-    const regex = /^[0123456789NSWE]+$/
-    if (!position || position.length !== 3 || !regex.test(position))
+    const regex = /^[0123456789NSWE ]+$/
+    if (!position || !regex.test(position))
         throw new Error('Please provide valid position argument')
 
-    const positionArr = position.split('')
+    const positionArr = position.split(' ')
     const cords = {
         xPos: parseInt(positionArr[0]),
         yPos: parseInt(positionArr[1]),
@@ -85,7 +85,7 @@ export function executeInstruction(instruction: string, rover: Rover): string {
         }
     }
 
-    return `${pos.xPos}${pos.yPos}${direction}`
+    return `${pos.xPos} ${pos.yPos} ${direction}`
 }
 
 function turnRight(direction: Cardinal): Cardinal {

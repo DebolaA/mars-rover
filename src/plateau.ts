@@ -29,7 +29,7 @@ export function updateRoverList(
     res: string,
     plateau: Plateau,
 ): Plateau {
-    const positionArr = res.split('')
+    const positionArr = res.split(' ')
     const index = plateau.roverList.findIndex((x) => x.name === rover.name)
     plateau.roverList[index].direction = positionArr[2] as Cardinal
     plateau.roverList[index].position.xPos = parseInt(positionArr[0])
